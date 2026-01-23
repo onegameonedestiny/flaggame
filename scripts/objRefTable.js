@@ -1,0 +1,72 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Json,
+		C3.Plugins.Text,
+		C3.Plugins.Touch,
+		C3.Plugins.Button,
+		C3.Plugins.Sprite,
+		C3.Plugins.List,
+		C3.Plugins.TextBox,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.JavaScriptInEvents.共用_Event2,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.Every,
+		C3.JavaScriptInEvents.共用_Event8_Act1,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.List.Cnds.CompareSelection,
+		C3.Plugins.List.Exps.SelectedIndex,
+		C3.Plugins.List.Exps.SelectedText,
+		C3.Plugins.TextBox.Acts.SetVisible,
+		C3.Plugins.Button.Acts.SetVisible,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Button.Cnds.IsVisible,
+		C3.Plugins.TextBox.Cnds.CompareText,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.JavaScriptInEvents.顯示房_Event7_Act1,
+		C3.JavaScriptInEvents.班長等待_Event2
+	];
+};
+self.C3_JsPropNameTable = [
+	{JSON: 0},
+	{文本: 0},
+	{觸控: 0},
+	{按鈕: 0},
+	{文本2: 0},
+	{精靈2: 0},
+	{列表: 0},
+	{剩餘堂數: 0},
+	{輸入框: 0},
+	{按鈕2: 0},
+	{時間: 0},
+	{stage: 0},
+	{sofartime: 0},
+	{flag: 0},
+	{playerNB: 0},
+	{class: 0},
+	{nowtime: 0},
+	{flaganswer: 0},
+	{職位: 0},
+	{MyFlag: 0},
+	{StartTime: 0},
+	{Value: 0},
+	{finalanswer: 0}
+];
+
+self.InstanceType = {
+	JSON: class extends self.IJSONInstance {},
+	文本: class extends self.ITextInstance {},
+	觸控: class extends self.IInstance {},
+	按鈕: class extends self.IButtonInstance {},
+	文本2: class extends self.ITextInstance {},
+	精靈2: class extends self.ISpriteInstance {},
+	列表: class extends self.IListInstance {},
+	剩餘堂數: class extends self.ITextInstance {},
+	輸入框: class extends self.ITextInputInstance {},
+	按鈕2: class extends self.IButtonInstance {},
+	時間: class extends self.ITextInstance {}
+}
